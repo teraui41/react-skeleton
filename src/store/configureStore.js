@@ -1,5 +1,5 @@
 import rootReducer from '../reducers';
-import {createStore, compose} from 'redux';
+import {createStore, applyMiddleware, compose} from 'redux';
 import { composeWithDevTools } from 'redux-devtools-extension';
 
 const composeEnhancers = process.env.NODE_ENV === 'development' ? composeWithDevTools : compose;
